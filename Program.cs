@@ -11,13 +11,13 @@ public class Program
 
 	public static void Main()
 	{
-		Console.WriteLine("Skriv Nummer 1");
+		Console.WriteLine("Type Number 1");
 		string tal1 = Console.ReadLine(); // läs tal 1
 
-		Console.WriteLine("Skriv Operator (+, -, *, /)");
+		Console.WriteLine("Type Operator (+, -, *, /)");
 		string op = Console.ReadLine(); // läs operator
 
-		Console.WriteLine("Skriv Nummer 2");
+		Console.WriteLine("Type Nummer 2");
 		string tal2 = Console.ReadLine(); // läs tal 2
 
 		float nytal1 = float.Parse(tal1); // gör tal 1 till float value eftersom vi vill kunna ha decimaler
@@ -43,7 +43,7 @@ public class Program
 			}
 			else // om tal 1 eller 2 är 0
 			{
-				Console.WriteLine("Du kan ej dividera med 0!\n");
+				Console.WriteLine("You cannot divide with 0!\n");
 				Main();
 			}
 		}
@@ -54,7 +54,7 @@ public class Program
 		}
 		Console.WriteLine(""); // tom rad
 
-		Console.WriteLine("Historik:");
+		Console.WriteLine("History:");
 		foreach (string Item in Historik) // för varje string i listan Historik så skriver vi ut den stringen i consolen
 		{
 			Console.WriteLine(Item);
